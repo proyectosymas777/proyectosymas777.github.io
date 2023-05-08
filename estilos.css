@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap);
+
+
+
+html {
+    scroll-behavior: smooth ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #000;
+    color: #ffffff;
+    min-height: 200vh;
+}
+.contenedor {
+    width: 90%;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    border-radius: 20px;
+    background: #111;
+    height: auto;
+}
+
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 100000;
+    padding: 40px 100px;
+}
+header.sticky {
+    padding: 15px 100px;
+    background: #000;
+    box-shadow: 0 0 10px -1px white;
+}
+header.sticky .nav-link:hover{
+    background-color: #999;
+}
+header.sticky .nav-link:hover a {
+    color: #000;
+}
+header .logo img {
+    width: 250px;
+    height: 70px;
+    
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 20px;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+    width: 250px;
+    padding: 15px 15px 15px 15px;
+}
+header ul li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+header ul li:hover .menu-vertical {
+    display: block;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header ul li a:hover {
+    color: #7f7f7f;
+    transition: 0.1s ease;
+}
+
+
+
+
+
+.menu-vertical>li:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+.menu-vertical>li:hover a {
+    color: red;
+    font-size: 16px;
+    transition: 0.1s all;
+}
+.menu-vertical {
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 15px;
+    width: 250px;
+    display: none;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+}
+.menu-vertical #menu1 {
+    width: 250px;
+}
+
+
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.unir.net/wp-content/uploads/2021/04/ficha_1920x1080-copiaiStock-1270632735.jpg);
+    background-size: cover;
+}
+
+
+
+
+.contenedor h1 {
+    color: #FF0000;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+}
+.contenedor p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    color: #87CEEB;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+.contenedor .highlight {
+    color: #ff9900;
+    font-weight: bold;
+}
+.contenedor .link {
+    color: cornflowerblue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contenedor .link:hover {
+    color: #ff9900;
+}
+.contenedor h2 {
+    color: #00FF00;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+
+}
+.contenedor .lista {
+    width: 90%;
+    margin: auto;
+}
+.lista ul li h3 {
+    color: #C0C0C0;
+}
+.lista ul li p {
+    color: #FFFFCC;
+}
+.contenedor .p-final {
+    padding: 0px 0px 50px 10px;
+}
+
+
+
+
+
+.box {
+    display: flex;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+}
+.box .box-titulo a {
+    display: none;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.bg1 {
+    display: block;
+    text-align: center;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Solar_sys.jpg);
+}
+.bg2 {
+    display: block;
+    text-align: center;
+    background: url(https://plustatic.com/3032/conversions/fisica-cuantica-social.jpg);
+}
+.bg3 {
+    display: block;
+    text-align: center;
+    background: url(https://nanova.org/wp-content/uploads/2021/09/939jzakc.jpg);
+}
+.bg4 {
+    display: block;
+    text-align: center;
+    background: url(https://3.bp.blogspot.com/-wgxHP2cTRBk/XCfmmkE9jyI/AAAAAAAADaI/GzBksD-5F_48XhOUtvXkDspBiWBlDt08gCLcBGAs/s1600/electromagnetismo.jpg);
+}
+.bg5 {
+    display: block;
+    text-align: center;
+    background: url(https://www.foronuclear.org/wp-content/uploads/2020/05/hal-558x318.png?x13653);
+}
+.bg6 {
+    display: block;
+    text-align: center;
+    background: url(https://st3.depositphotos.com/16761810/35626/i/600/depositphotos_356269776-stock-photo-planets-and-galaxy-cosmos-physical.jpg);
+}
+.box > div {
+    flex: .8;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.box > div:hover {
+    flex: 5;
+}
+.box > div:hover .box-titulo a {
+    display: block;
+}
+.box > div:hover .box-titulo a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: .1s ease;
+}
